@@ -9,6 +9,9 @@ function verificar() {
     if (idad >=126 || AnoAtual === Nasci ) {
         window.alert("[ERRO] Idade Inválida! Tente Novamente.")
         return
+    } else if(Sexo === "Masculino" && idad == 1) {
+        resulttext.innerHTML = `Detectamos um Menino de  ${idad}  ano!`
+        img.src = "imgs/homem-criança.jpg"
     } else if(Sexo === "Masculino" && idad >= 1 && idad <=14) {
         resulttext.innerHTML = `Detectamos uma Criança de ${idad} anos!`
         img.src = "imgs/homem-criança.jpg"
@@ -21,6 +24,9 @@ function verificar() {
     } else if (Sexo === "Masculino" && idad >= 60) {
         resulttext.innerHTML = `Detectamos um Homem Idoso de ${idad} anos!`
         img.src = "imgs/homem-idoso.jpg"
+    } else if (Sexo === "Feminino" && idad == 1 ) {
+        resulttext.innerHTML = `Detectamos uma Menina de ${idad} ano!`
+        img.src = "imgs/mulher-criança.jpg"
     } else if (Sexo === "Feminino" && idad >= 1 && idad <=14) {
         resulttext.innerHTML = `Detectamos uma Menina de ${idad} anos!`
         img.src = "imgs/mulher-criança.jpg"

@@ -6,7 +6,7 @@ function verificar() {
     let idad = AnoAtual - Nasci
     let resulttext = document.getElementById("p-result")
     let img = document.getElementById("img-result")
-    if (idad >=126 || AnoAtual === Nasci ) {
+    if (idad >=126 || AnoAtual === Nasci || Nasci > AnoAtual) {
         window.alert("[ERRO] Idade Inválida! Tente Novamente.")
         img.style.display = 'none'
         return
